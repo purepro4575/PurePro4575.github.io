@@ -343,7 +343,6 @@ img {
       for (let i = 0; i < gameCards.length; i++) { 
         // Get the data-title attribute of each game card
         let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
-        let gameDesc = gameCards[i].getAttribute("game-description").toLowerCase();
         // If the search value matches the game title
         if (gameTitle.includes(searchValue)) {
           // Show the game card
