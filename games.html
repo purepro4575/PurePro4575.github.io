@@ -344,7 +344,7 @@ img {
         let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
         let gameDesc = gameCards[i].getAttributes("game-description").toLowerCase();
         // If the search value matches the game title
-        if ((gameTitle.includes(searchValue)) or (gameDesc.includes(searchValue))) {
+        if ((gameTitle.includes(searchValue)) || (gameDesc.includes(searchValue))) {
           // Show the game card
           gameCards[i].style.display = "block";
         } else {
