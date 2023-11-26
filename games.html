@@ -88,7 +88,7 @@ img {
 </style>
 </head>
 <body>
-
+<center>
 <div class="search-container">
   <input type="text" class="search-box" placeholder="Search for mobile games..." id="search-input">
   <button class="search-button" id="search-button">🔍</button>
@@ -328,7 +328,8 @@ img {
   </div>
 
   </div>
-  
+</div> 
+</center>
 <script>
   // Get the elements from the document
   let searchInput = document.getElementById("search-input");
@@ -344,7 +345,7 @@ img {
         let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
         let gameDesc = gameCards[i].getAttribute("game-description").toLowerCase();
         // If the search value matches the game title
-        if ((gameTitle.includes(searchValue)) || (gameDesc.includes(searchValue))) {
+        if (gameTitle.includes(searchValue)) {
           // Show the game card
           gameCards[i].style.display = "block";
         } else {
