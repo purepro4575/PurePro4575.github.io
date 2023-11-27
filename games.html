@@ -623,7 +623,6 @@ body {
   let gameCards = document.querySelectorAll(".game-card");
 
   function filterSearch (searchValue) {
-    if (searchValue.length > 0) { 
       // Loop through the game cards
       for (let i = 0; i < gameCards.length; i++) { 
         // Get the data-title attribute of each game card
@@ -638,8 +637,7 @@ body {
           gameCards[i].style.display = "none";
          }
        }
-     }
-   }
+  }
   
 
 
