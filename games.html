@@ -444,8 +444,9 @@ img {
       for (let i = 0; i < gameCards.length; i++) { 
         // Get the data-title attribute of each game card
         let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
+        let gameDesc = gameCards[i].querySelector(".game-description").textContent
         // If the search value matches the game title
-        if (gameTitle.includes(searchValue)) {
+        if (gameTitle.includes(searchValue) || ( gameDesc && gameDesc.includes(searchValue))) {
           // Show the game card
           gameCards[i].style.display = "block";
         } else {
