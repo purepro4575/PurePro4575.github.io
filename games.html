@@ -8,8 +8,7 @@
 
 body {
   margin: 0;
-  background-image: url('Untitled design.png');
-  background: black;
+  background-image: url('IMG_0458.gif');
 }
   
 .search-container {
@@ -18,7 +17,6 @@ body {
   align-items: center;
   padding: 20px;
   text-decoration: none;
-  z-index: 4;
 }
 
 .search-box {
@@ -28,7 +26,6 @@ body {
   border-radius: 20px;
   padding: 10px;
   outline: none;
-    z-index: 4;
 }
 
 .search-button {
@@ -39,12 +36,10 @@ body {
   margin-left: 10px;
   background: white;
   cursor: pointer;
-    z-index: 4;
 }
 
 .search-button:hover {
   transform: scale(1.1);
-    z-index: 4;
 }
 
 .game-container {
@@ -53,7 +48,6 @@ body {
   grid-gap: 20px;
   padding: 20px;
   text-decoration: none;
-    z-index: 4;
 }
 
 .game-card {
@@ -71,7 +65,6 @@ body {
                     linear-gradient(to right, aqua, lime);
   background-origin: border-box;
   background-clip: content-box, border-box;
-    z-index: 4;
 }
 
 .game-image {
@@ -106,43 +99,9 @@ a {
   color: gray;
   padding: 10px;
 }
-
-  html, body{
-  background: #000000;
-}
-.background{
-  position: absolute;
-  display: block;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
-  z-index: 1;
-}
-
-.logo {
-   z-index: 5;
-}
-  
 </style>
 </head>
 <body>
-  <script>
-    window.onload = function(){
-  Particles.init({
-    selector: '.background',
-    maxParticles: 150,
-    connectParticles: 'true',
-    speed:2,
-    minDistance: 140,
-    sizeVariations: 4,
-    color: '#ffffff'
-  });
-}
-
-  </script>
- 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
 <center>
    <img src="Untitled drawing2.svg" class="logo" style="width: 300px; height: 300px;">
   
@@ -707,5 +666,4 @@ a {
 </html>
     
 <a href="terms">Privacy Policy</a>
-   <canvas class="background"></canvas>
 </html>
