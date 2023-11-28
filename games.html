@@ -1,5 +1,46 @@
 <html>
 <head>
+  <script>
+              return this;
+        }
+      } else if (typeof options === "object" || !options) {
+        return this.each(function() {
+          if (!$.data(this, 'plugin_' + pluginName)) {
+            $.data(this, 'plugin_' + pluginName, new Plugin(this, options));
+          }
+        });
+      }
+    };
+  }
+​
+})(window, document);
+​
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+      window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+      window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+                                 || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+​
+    if (!window.requestAnimationFrame)
+      window.requestAnimationFrame = function(callback, element) {
+        var currTime = new Date().getTime();
+        var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+        var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+          timeToCall);
+        lastTime = currTime + timeToCall;
+        return id;
+      };
+​
+    if (!window.cancelAnimationFrame)
+      window.cancelAnimationFrame = function(id) {
+        clearTimeout(id);
+      };
+}());
+​
+  </script>
 <style>
 * {
   box-sizing: border-box;
@@ -12,6 +53,11 @@ body {
   background: black;
 }
 
+canvas {
+height: 100vh;
+background-color: black;
+}
+  
 .search-container {
   display: flex;
   justify-content: center;
@@ -101,8 +147,13 @@ a {
   padding: 10px;
 }
 </style>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+
+<div id="particles">
+
+  
 <center>
    <img src="Untitled drawing2.svg" class="logo" style="width: 300px; height: 300px;">
   
@@ -667,4 +718,5 @@ a {
 </html>
     
 <a href="terms">Privacy Policy</a>
+</div>
 </html>
