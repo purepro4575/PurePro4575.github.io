@@ -65,7 +65,7 @@
   <style>
   .cls-1{fill:#034051;}.cls-2{fill:#fbb03b;}.cls-3{fill:#9e9ea9;}.cls-4{fill:#cfa551;}.cls-5{fill:#e5ca9e;}.cls-6{fill:#ba8934;}.cls-7{fill:#895d1b;}.cls-8{fill:#efbf6c;}.cls-9{fill:#4a3d28;}.cls-10{fill:#61584c;}.cls-11{fill:#1c1a18;}.cls-12{fill:#724b17;}.cls-13{fill:#f2f2f2;}.cls-14{fill:#717377;}.cls-15{fill:#e4e4e4;}.cls-16{fill:#c4bec8;}.cls-17{fill:#fff;opacity:0.55;}</style>
 </defs>
-<title>dogespinner</title>
+ <meta name="apple-mobile-web-app-capable" content="yes"> <title>dogespinner</title>
 <g id="svgbackground" class="spinmeroundroundbaby">
   <circle class="path" fill="none" stroke-width="12" stroke-linecap="round" cx="213.58" cy="209.96" r="200"></circle>
 </g>
